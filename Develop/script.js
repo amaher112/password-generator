@@ -44,15 +44,17 @@ function generatePassword() {
   if (hasSpecialCharacters) {
     characterBank = characterBank.concat(specialCharacters);
   }
-
+  // console.log(characterBank);
+  
   // Logic creating the random password
-for (var i = 0; i < passwordLength; i++){
-  var randomIndex = Math.floor((Math.random() * passwordLength.length -1) +1);
-  // var randomIndex = characterBank[Math.floor(Math.random() * passwordLength.length)];
-console.log(randomIndex)
+  
+for (var i = 0; i < passwordLength; i++){  
+    randomIndex = characterBank[Math.floor(Math.random() * (passwordLength - 1) + 1)];
+  
+    
 };
- 
-  // return newPassword.join("");
+console.log(randomIndex);
+  // return newPassword = randomIndex.join("");
  
 }
 
