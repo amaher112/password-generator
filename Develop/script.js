@@ -15,7 +15,7 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var newPassword = []
+  var newPassword = "";
   var characterBank = []
   var passwordLength = parseInt(prompt("How many characters do you want your password to be?"));
  
@@ -44,18 +44,17 @@ function generatePassword() {
   if (hasSpecialCharacters) {
     characterBank = characterBank.concat(specialCharacters);
   }
-  // console.log(characterBank);
-  
-  // Logic creating the random password
-  
-for (var i = 0; i < passwordLength; i++){  
-    randomIndex = characterBank[Math.floor(Math.random() * (passwordLength - 1) + 1)];
-  
-    
-};
-console.log(randomIndex);
-  // return newPassword = randomIndex.join("");
  
+  // Logic creating the random password
+
+for (var i = 0; i < passwordLength; i++){  
+  var randomIndex = Math.floor(Math.random() * (characterBank.length - 1) + 1);
+
+  newPassword += characterBank[randomIndex];
+ 
+};
+
+ alert(newPassword);
 }
 
 
