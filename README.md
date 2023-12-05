@@ -8,4 +8,4 @@ I expanded upon given code and researched various aspects of JavaScript to creat
 ## Usage
 Here is the live link:
 
-![password generator screenshot](assets/Screenshot.png)
+![password generator screenshot](Assets/Screenshot.png)
